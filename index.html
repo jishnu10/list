@@ -3,36 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Table</title>
-  <!-- You can include any CSS or other meta tags here -->
+  <title>Items and Quantity</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="aa_htmlTable">
     <h2 class="aa_h2">HTML Table</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Particulars</th> <!-- Corrected -->
-          <th>Quantity</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>banana</td> <!-- Corrected -->
-          <td><input type="number" min="0" placeholder="Select quantity"></td> <!-- Updated to an input field -->
-        </tr>
-        <tr>
-          <td>orange</td>
-          <td><input type="number" min="0" placeholder="Select quantity"></td> <!-- Updated to an input field -->
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>apple</td>
-          <td><input type="number" min="0" placeholder="Select quantity"></td> <!-- Updated to an input field -->
-        </tr>
-      </tfoot>
-    </table>
+    <form action="#">
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" id="particulars1" name="particulars1" placeholder="Particulars"></td>
+            <td><input type="number" id="quantity1" name="quantity1" min="0" placeholder="Quantity"></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="particulars2" name="particulars2" placeholder="Particulars"></td>
+            <td><input type="number" id="quantity2" name="quantity2" min="0" placeholder="Quantity"></td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$<span id="totalAmount">0</span></td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="submit-row">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </div>
 </body>
 </html>
