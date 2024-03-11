@@ -1,44 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Items and Quantity</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Particulars, Quantity, and Amount</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="aa_htmlTable">
-    <h2 class="aa_h2">HTML Table</h2>
-    <form action="#">
-      <table>
+
+<div class="container">
+    <!-- Main heading as input -->
+    <h1 class="main-heading" contenteditable="true">Particulars, Quantity, and Amount</h1>
+
+    <!-- Table -->
+    <table id="particularsTable">
         <thead>
-          <tr>
-            <th>Particulars</th>
-            <th>Quantity</th>
-          </tr>
+            <tr>
+                <th>Particulars</th>
+                <th>Quantity</th>
+                <th>Amount</th> 
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><input type="text" id="particulars1" name="particulars1" placeholder="Particulars"></td>
-            <td><input type="number" id="quantity1" name="quantity1" min="0" placeholder="Quantity"></td>
-          </tr>
-          <tr>
-            <td><input type="text" id="particulars2" name="particulars2" placeholder="Particulars"></td>
-            <td><input type="number" id="quantity2" name="quantity2" min="0" placeholder="Quantity"></td>
-          </tr>
-          <!-- Add more rows as needed -->
+            <tr>
+                <td><input type="text" id="item1" value="ഫിഷ് മസാല"></td>
+                <td><input type="text" id="quantity1" value="0"></td>
+                <td><input type="text" id="amount1" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item2" value="മീറ്റ് മസാല"></td>
+                <td><input type="text" id="quantity2" value="0"></td>
+                <td><input type="text" id="amount2" value="0"></td> <!-- New column added -->
+            </tr>
+             <tr>
+                <td><input type="text" id="item6" value="ബിരിയാണി അരി"></td>
+                <td><input type="text" id="quantity6" value="0"></td>
+                <td><input type="text" id="amount6" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item7" value="മാമുക്കോയ റോസ് ബിരിയണി റൈസ്"></td>
+                <td><input type="text" id="quantity7" value="0"></td>
+                <td><input type="text" id="amount7" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item8" value="വെജ് മസാല"></td>
+                <td><input type="text" id="quantity8" value="0"></td>
+                <td><input type="text" id="amount8" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item9" value="ബസ്‌മതി റൈസ്"></td>
+                <td><input type="text" id="quantity9" value="0"></td>
+                <td><input type="text" id="amount9" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item10" value="ഗരം മസാല"></td>
+                <td><input type="text" id="quantity10" value="0"></td>
+                <td><input type="text" id="amount10" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item11" value="ബസ്‌മതി സെല്ല റൈസ്"></td>
+                <td><input type="text" id="quantity11" value="0"></td>
+                <td><input type="text" id="amount11" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item12" value="നൂഡിൽസ്"></td>
+                <td><input type="text" id="quantity12" value="0"></td>
+                <td><input type="text" id="amount12" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item13" value="അൽസ ഗോതമ്പ്"></td>
+                <td><input type="text" id="quantity13" value="0"></td>
+                <td><input type="text" id="amount13" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item14" value="ചാട്ട് മസാല"></td>
+                <td><input type="text" id="quantity14" value="0"></td>
+                <td><input type="text" id="amount14" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item15" value="തന്തുരി മസാല"></td>
+                <td><input type="text" id="quantity15" value="0"></td>
+                <td><input type="text" id="amount15" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item16" value="കബാബ് മസാല"></td>
+                <td><input type="text" id="quantity16" value="0"></td>
+                <td><input type="text" id="amount16" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item17" value="കടുക്"></td>
+                <td><input type="text" id="quantity17" value="0"></td>
+                <td><input type="text" id="amount17" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item18" value="ഉഴുന്ന് പരിപ്പ്"></td>
+                <td><input type="text" id="quantity18" value="0"></td>
+                <td><input type="text" id="amount18" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item19" value="ചെറിയ ഉള്ളി"></td>
+                <td><input type="text" id="quantity19" value="0"></td>
+                <td><input type="text" id="amount19" value="0"></td> <!-- New column added -->
+            </tr>
+            <tr>
+                <td><input type="text" id="item20" value="പപ്പടം"></td>
+                <td><input type="text" id="quantity20" value="0"></td>
+                <td><input type="text" id="amount20" value="0"></td> <!-- New column added -->
+            </tr>
+        <tr>
+            <td><input type="text" value="ഫിഷ് മസാല"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="മീറ്റ് മസാല"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Add more items as needed -->
+        <tr>
+            <td><input type="text" value="കുടമ്പുളി"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="പശുവിൻ നെയ്യ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="ചില്ലി സോസ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="റോസ് വാട്ടർ"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="സോയ സോസ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="ഡാൽഡ (തെങ്ങ് മാർക്ക്)"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="ടൊമാറ്റോ സോസ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="സർപ്പ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="സൺഫ്ളവർ ഓയിൽ"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="കോക്കനട്ട് മിൽക്ക് പൗഡർ"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="സബീന"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="ഓയിൽ"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="തകോലം"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="കറവ പട്ട"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="കറാമ്പ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="കോക്കനട്ട് മിൽക്ക്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="സോപ് ലക്സ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="റെഡ് കളർ"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <!-- Continue adding items -->
+        <tr>
+            <td><input type="text" value="വിം ലിക്കിഡ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        <tr>
+            <td><input type="text" value="ബിരിയാണി കളർ"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> 
+        </tr>
+        
+        <tr>
+            <td><input type="text" value="സാബൂൻ അരി"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> 
+        </tr>
+        <tr>
+            <td><input type="text" value="ഏലക്കായ്"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> <!-- New column added -->
+        </tr>
+        
+        <tr>
+            <td><input type="text" value="ജാതിക്ക"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> 
+        </tr>
+        <tr>
+            <td><input type="text" value="ജാതിപത്രി"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> 
+        </tr>
+        
+        <tr>
+            <td><input type="text" value="സാജീരകം"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> 
+        </tr>
+        <tr>
+            <td><input type="text" value="നല്ല ജീരകം"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> 
+        </tr>
+        <tr>
+            <td><input type="text" value="വാനില പൗഡർ"></td>
+            <td><input type="text" value="0"></td>
+            <td><input type="text" value="0"></td> 
+        </tr>
+
         </tbody>
-        <tfoot>
-          <tr>
-            <td>Sum</td>
-            <td>$<span id="totalAmount">0</span></td>
-          </tr>
-        </tfoot>
-      </table>
-      <div class="submit-row">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-  </div>
+    </table>
+
+    
+    <div class="print-button">
+        <button onclick="printPage()">Print</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
